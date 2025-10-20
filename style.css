@@ -1,0 +1,71 @@
+/*
+    Folha de esilo do site professor.com
+    @author Professor José de Assis
+    @link 
+/*
+
+/* Layout _______________________________ */
+
+/* Variabeis */
+:root {
+    --Cinza: #575757;
+    --RoxoClaro: #4b0082;
+    --RoxoEscuro: #2e1a47;
+    --Preto: #000000;
+    --Branco: #ffffff;
+}
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Fim Layout_____________________________________________ */
+
+/*  Smartphone portrait___________________________________ */
+
+/*  Fim Smartphone portrait_______________________________ */
+
+/*  Smartphone landscape__________________________________ */
+@media (min-width: 576px){
+
+}
+
+/*  Fim Smartphone landscape______________________________ */
+
+/*  Tablet portrait_______________________________________ */
+@media (min-width: 768px){
+
+}
+
+
+/*  Fim Tablet portrait___________________________________ */
+
+/*  Tablet landscape______________________________________ */
+@media (min-width: 992px){
+
+}
+
+
+/*  Fim Tablet landscape__________________________________ */
+
+/*  Notebook / PC - HD____________________________________ */
+@media (min-width: 1200px){
+
+}
+
+
+/*  Fim Notebook / PC - HD________________________________ */
+
+/*  Notebook / PC / TV - Full HD ou 4K____________________ */
+@media (min-width: 1400px){
+
+}
+
+
+/*  Fim Notebook / PC / TV - Full HD ou 4K________________ */

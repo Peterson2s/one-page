@@ -16,56 +16,138 @@
 }
 
 /* CSS Reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Open Sans", sans-serif;
 }
+
+.container {
+    display: flex;
+
+
+}
+.layout {
+    margin: 0 ;
+}
+
 
 /* Fim Layout_____________________________________________ */
 
 /*  Smartphone portrait___________________________________ */
+/* Cabeçalho */
+header {
+    height: 65px;
+    background-color: #4b0082;
+}
+
+/* Esconder CheckBox */
+#check {
+    display: none;
+
+}
+
+label {
+    font-size: 3rem;
+    color: rgba(46, 26, 71);
+    position: fixed;
+    top: 5px;
+    right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    background-color: rgba(75, 0, 130);
+    width: 50%;
+    /* Ajustar com Width */
+    right: -50%;
+    transition: all 0.5s;
+}
+
+/* Ação para a CheckBox quando selecionada mudar ul */
+#check:checked~ul {
+    right: 0;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--Preto);
+    text-align: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--Branco);
+
+}
+
 
 /*  Fim Smartphone portrait_______________________________ */
 
 /*  Smartphone landscape__________________________________ */
-@media (min-width: 576px){
+@media (min-width: 576px) {
+/* Cabeçalho */
+nav ul {
+    width: 40%;
+    /* Ajustar com Width */
+    right: -40%;
 
+}
 }
 
 /*  Fim Smartphone landscape______________________________ */
 
 /*  Tablet portrait_______________________________________ */
-@media (min-width: 768px){
-
-}
+@media (min-width: 768px) {}
 
 
 /*  Fim Tablet portrait___________________________________ */
 
 /*  Tablet landscape______________________________________ */
-@media (min-width: 992px){
-
-}
+@media (min-width: 992px) {}
 
 
 /*  Fim Tablet landscape__________________________________ */
 
 /*  Notebook / PC - HD____________________________________ */
-@media (min-width: 1200px){
-
+@media (min-width: 1200px) {
+    header {
+        height: 100px;
+    }
+    .logo img{
+        width: 194px;
+        height: 194px;
+    }
+    label {
+        display: none;
+    }
+    nav ul {
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+    nav ul li a:hover{
+        color: var(--RoxoClaro);
+    }
 }
 
 
 /*  Fim Notebook / PC - HD________________________________ */
 
 /*  Notebook / PC / TV - Full HD ou 4K____________________ */
-@media (min-width: 1400px){
-
-}
+@media (min-width: 1400px) {}
 
 
 /*  Fim Notebook / PC / TV - Full HD ou 4K________________ */

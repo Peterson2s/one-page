@@ -1,0 +1,161 @@
+Mundanças !!Index.Html
+apagar a class do header e colocar class "container" no div
+
+Adições !!Style.css
+No Notebook PC layout antes do "Header" adicionar:
+/* Layout */
+    .container{
+        justify-content: space-between;
+        max-width: 1140px;
+    }
+Adição no nav ul do Notebook PC !!Style.css
+        margin-top: 50px;  !!Valor com base do seu site 
+
+Adição no "Smartphone landscape" antes do "Header" adicionar:
+/* Layout */
+    .container{
+        background-color: #000000; !!Opcional apenas para ver o container
+        max-width: 540px;
+    }
+
+Adição no "Tablet Portrait" antes do "Header" adicionar:
+    
+    /* Layout */
+    .container {
+        max-width: 720px;
+    }
+
+Adição no  "Tablet landscape" antes do "Header" adicionar:
+    
+    /* Layout */
+    .container {
+        justify-content: space-between;
+        max-width: 960px;
+    }
+
+Adição no "Notebook PC" antes do "Header" adicionar:
+
+    /* Layout */
+    .container {
+        justify-content: space-between;
+        max-width: 1140px;
+    }
+Adição no "Notebook PC TV" antes do "Header" adicionar:
+
+    /* Layout */
+    .container{
+        max-width: 1320px;
+    }
+ ______________________________________________________
+
+ Banner no  depois do fim de "Header" !!Index.Html
+        <!-- Principal -->
+       <main>
+              <div class="container">
+                     <h1>Musics</h1>
+                     <h2>Lumière</h2>
+                     <a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer"class="btn">Saiba +</a> !!Link ao seu gosto
+              </div>
+       </main>
+
+Adição do Banner no Style.css no "Smartphone Portrait" depois do "nav ul li a"
+
+/* Principal */
+main{
+    height: 50vh;
+    background: url('./img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+main .container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: var(--Branco);
+    font-family: embassy BT;
+    font-size: 3rem;
+    text-shadow: #2e1a47 2px 2px 4px;
+}
+
+main h2 {
+    color: var(--Branco);
+    font-family: embassy BT;
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: #2e1a47 2px 2px 4px;
+    margin-bottom: 30px;
+}
+
+Editando o botão "btn" antes de acabar o "Layout" Style.css
+
+/* Botão */
+
+.btn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #2e1a47;
+    padding: 10px 40px;
+    color: var(--Branco);
+    border-radius: 20px;
+    border: 2px solid var(--Branco);
+}
+
+
+/* Fim Layout
+
+Mundanças nos layouts em cada dispositivo
+
+Smartphone landscape
+
+    /* Principal */
+    main{
+        height: 70vh;
+    }
+    main h1{
+        font-size: 4rem;
+    }
+    main h2{
+        font-size: 2rem;
+    }
+
+Tablet Portrait
+
+        /* Principal */
+    main{
+        height: 50vh;
+    }
+    main h1{
+        font-size: 5rem;
+    }
+    main h2{
+        font-size: 3rem;
+    }
+
+Tablet landscape 
+
+    /* Principal */
+    main{
+        height: 50vh;
+    }
+    
+Notebook PC
+
+    main {
+        height: 50vh;
+    }
+
+Notebook PC TV 4K
+
+    /*Principal */
+    main h1{
+        font-size: 6rem;
+    }
+    main h2{
+        font-size: 4rem;
+
+        !!!!!!!!!!! Essas mundanças SÃO com base no seu site então mude do jeito que achar melhor!!!!!!!!!!!!!

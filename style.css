@@ -28,11 +28,25 @@ body {
 
 .container {
     display: flex;
+    margin: 0 auto;
 
 
 }
+
 .layout {
-    margin: 0 ;
+    margin: 0;
+}
+
+/* Botão */
+.btn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #2e1a47;
+    padding: 10px 40px;
+    color: var(--Branco);
+    border-radius: 20px;
+    border: 0.5px solid var(--Branco);
 }
 
 
@@ -88,58 +102,147 @@ nav ul li a {
 
 }
 
+/* Principal */
+main {
+    height: 50vh;
+    background: url('./img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+main .container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: var(--Branco);
+    font-family: embassy BT;
+    font-weight: 500;
+    font-size: 3rem;
+    text-shadow: #2e1a47 2px 2px 4px;
+}
+
+main h2 {
+    color: var(--Branco);
+    font-family: embassy BT;
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: #2e1a47 2px 2px 4px;
+    margin-bottom: 30px;
+}
 
 /*  Fim Smartphone portrait_______________________________ */
 
 /*  Smartphone landscape__________________________________ */
 @media (min-width: 576px) {
-/* Cabeçalho */
-nav ul {
-    width: 40%;
-    /* Ajustar com Width */
-    right: -40%;
 
-}
+    /* Layout */
+    .container {
+        max-width: 540px;
+    }
+
+    /* Cabeçalho */
+    nav ul {
+        width: 40%;
+        /* Ajustar com Width */
+        right: -40%;
+    }
+    /* Principal */
+    main{
+        height: 70vh;
+    }
+    main h1{
+        font-size: 4rem;
+    }
+    main h2{
+        font-size: 2rem;
+    }
 }
 
 /*  Fim Smartphone landscape______________________________ */
 
 /*  Tablet portrait_______________________________________ */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    /* Layout */
+    .container {
+        max-width: 720px;
+    }
+        /* Principal */
+    main{
+        height: 50vh;
+    }
+    main h1{
+        font-size: 5rem;
+    }
+    main h2{
+        font-size: 3rem;
+    }
+
+}
 
 
 /*  Fim Tablet portrait___________________________________ */
 
 /*  Tablet landscape______________________________________ */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    /* Layout */
+    .container {
+        max-width: 960px;
+    }
+    /* Principal */
+    main{
+        height: 50vh;
+    }
+}
 
 
 /*  Fim Tablet landscape__________________________________ */
 
 /*  Notebook / PC - HD____________________________________ */
 @media (min-width: 1200px) {
+
+    /* Layout */
+    .container {
+        justify-content: space-between;
+        max-width: 1140px;
+    }
+
     header {
         height: 100px;
     }
-    .logo img{
+
+    .logo img {
         width: 194px;
         height: 194px;
     }
+
     label {
         display: none;
     }
+
     nav ul {
         position: static;
         width: 100%;
         height: auto;
         background-color: transparent;
+        margin-top: 50px;
     }
+
     nav ul li {
         float: left;
         border: 0;
     }
-    nav ul li a:hover{
+
+    nav ul li a:hover {
         color: var(--RoxoClaro);
+    }
+    main {
+        height: 50vh;
     }
 }
 
@@ -147,7 +250,21 @@ nav ul {
 /*  Fim Notebook / PC - HD________________________________ */
 
 /*  Notebook / PC / TV - Full HD ou 4K____________________ */
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+
+    /* Layout */
+    .container {
+        max-width: 1320px;
+    }
+    /*Principal */
+    main h1{
+        font-size: 6rem;
+    }
+    main h2{
+        font-size: 4rem;
+    }
+
+}
 
 
 /*  Fim Notebook / PC / TV - Full HD ou 4K________________ */

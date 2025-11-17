@@ -52,7 +52,7 @@ body {
 /* Albuns */
 .card{
     width: 340px;
-    height: 450px;
+    height: 500px;
     background-color: #2e1a47;
     margin-top: 25px;
     border: 2px solid #4b0082;
@@ -65,10 +65,26 @@ body {
 .card h2{
     font-size: 1.2rem;
     margin: 15px 0px;
+    margin-left: 25%;
 }
 .card p{
     padding: 0px 10px 30px 10px;
     font-size: 1.1rem;
+    text-align: center;
+}
+.btn2 {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #2e1a47;
+    padding: 10px 40px;
+    color: var(--Branco);
+    border-radius: 20px;
+    border: 0.5px solid var(--Branco);
+}
+.card .btn2{
+    margin-left: 30%;
+    
 }
 
 
@@ -191,26 +207,34 @@ text-align: center;
 }
 /* Sobre */
 #sobre {
-      padding: 50px 10px;
-      background: #ffffff;
-      background: #575757;
-      background-size: cover;
-      background-position: center;
-   }
+    padding: 50px 10px;
+    background-color: #575757;
+}
 
 #sobre .container {
-      flex-direction: column;
+    flex-direction: column;
 }
-#descricao h2, p{
+
+#descricao h2,
+p {
+    color: var(--branco);
+}
+
+#descricao h2 {
+    margin-bottom: 15px;
+    font-size: 1.9rem;
+}
+
+#video {
     text-align: center;
 }
 
-
 #video iframe {
-      width: 355px;
-      height: 196px;
-      border-radius: 10px;
+    margin-top: 50px;
+    width: 355px;
+    height: 196px;
 }
+
 /* Wireframe  */
    #qrcode img{
         display: none;
@@ -399,34 +423,32 @@ text-align: center;
         align-items: left;
     }
     /* Sobre */
-      .sobre-container {
-    width: 100%;
-    margin: 0;
-    padding: 20px;
+    .sobre-container {
     display: flex;
-    justify-content: space-between;
-    align-items: row;
-    background-color: var(--Cinza);
-    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
+    text-align: center;
 
     
     }
     .sobre-container div {
-        width: 40%; 
+    max-width: 600px;
+    flex: 1 1 45%;
     }
     
     #descricao p, h2 {
         display: flex;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: var(--Branco);
         text-align: justify; 
         padding: 5px;
     }
    
     #video iframe {
-        width: 700px;
-        height: 450px;
+        width: 460px;
+        height: 290px;
         border: none;
     }
     /* Wireframe */
@@ -498,8 +520,11 @@ text-align: center;
     }
 
 }
+/* Rodapé */
 
-
+.rodape{
+    background-color: #4b0082;
+}
 /*  Fim Notebook / PC - HD________________________________ */
 
 /*  Notebook / PC / TV - Full HD ou 4K____________________ */

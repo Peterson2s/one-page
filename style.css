@@ -49,6 +49,16 @@ body {
     border-radius: 20px;
     border: 0.5px solid var(--Branco);
 }
+ .Botao {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #2e1a47;
+    padding: 10px 40px;
+    color: var(--Branco);
+    border-radius: 20px;
+    border: 0.5px solid var(--Branco);
+    }
 /* Albuns */
 .card{
     width: 340px;
@@ -93,6 +103,7 @@ body {
 
 /*  Smartphone portrait___________________________________ */
 /* Cabeçalho */
+
 header {
     height: 65px;
     background-color: #4b0082;
@@ -215,14 +226,15 @@ text-align: center;
     flex-direction: column;
 }
 
-#descricao h2,
-p {
+#descricao h2, p {
     color: var(--branco);
+    text-align: center;
 }
 
 #descricao h2 {
     margin-bottom: 15px;
     font-size: 1.9rem;
+    text-align: center;
 }
 
 #video {
@@ -239,17 +251,109 @@ p {
    #qrcode img{
         display: none;
     }
+#wireframe{
+    background-color: #2e1a47;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+#wireframe .container2 {
+    max-width: 900px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+#textowire{
+    flex: 1;
+}
+#textowire h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+#textowire p {
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+#textowire h2, p{
+    text-align: left;
+}
+#textowire .Botao {
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 40px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: transparent;
+    transition: 0.3s;
+}
+#textowire .Botao:hover {
+    background-color: #ffffff;
+    color: #2e1a47;
+}
+
+#textowire a{
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 40px;
+}
+#textowire h2, p{
+    color: #ffffff;
+}
+.Botao{
+    align-items: left;
+}
 /* Cartões  */
 #albuns{
     background-color: #575757;
 }
 #albuns .container{
+    display: flex;
     flex-direction: column;
     padding: 50px 0px;
+    align-items: center;
 
+}
+/* Maps */
+address .maps{
+    align-items: start;
+}
+
+.maps .contato {
+    padding: 0px 10px;
+    background-color: #2e1a47;   
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 
+@media (max-width: 600px) {
+    #googleMaps {
+        display: none !important;
+    }
+}
+
+/* Rodapé */
+@media (max-width: 600px) {
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+}
 /*  Fim Smartphone portrait_______________________________ */
 
 /*  Smartphone landscape__________________________________ */
@@ -452,79 +556,137 @@ p {
         border: none;
     }
     /* Wireframe */
-#wireframe {
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    width: 100vw;
-    padding: 80px 0;
-    background: url(img/wire.jpg) center/cover no-repeat;
-    background-attachment: fixed;
-    color: var(--branco);
-    display: flex;
-    justify-content: center;
-}
-
-#wireframe .Container.Flex2 {
-    max-width: 1200px;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-/* Texto */
-#textoWire {
+#textowire {
     flex: 1;
-    min-width: 300px;
+    color: #ffffff;
 }
 
-#textoWire h2 {
-    color: var(--dourado);
-    font-size: 2rem;
+#textowire h2 {
+    font-size: 2rem;        
     font-weight: 700;
     margin-bottom: 20px;
-    text-align: left;
 }
 
-#textoWire p {
-    color: var(--branco);
-    font-size: 1rem;
-    font-weight: 500;
+#textowire p {
+    font-size: 1rem;        
     line-height: 1.6;
-    text-align: left;
     margin-bottom: 25px;
 }
-
-
-
-    #qrcode img{
-        width: 180px;
-        height: auto;
-        border-radius: 8px;
-        display: block;
-    }
-    .Botao {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    background-color: #2e1a47;
-    padding: 10px 40px;
-    color: var(--Branco);
-    border-radius: 20px;
-    border: 0.5px solid var(--Branco);
-    }
-
+/* Alinhamento do bloco */
+#wireframe .container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;       
+    justify-content: center;
+    gap: 40px;                
+    max-width: 1200px;         
+    margin: 0 auto;
 }
+
+#qrcode img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Cartões  */
+    #albuns .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+    }
+    .card{
+        margin-top: 0px;
+        
+    }
+}
+/* Mapa */
+.maps {
+    background-color: #2e1a47;
+    padding: 60px 0;
+}
+
+.maps .contato {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; 
+}
+
+/* MAPA */
+#googleMaps iframe {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px #2e1a47;
+    display: block;
+}
+ #googleMaps iframe {
+    display: block;
+}
+
+.info-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    font-size: 16px;
+    max-width: 400px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-item img {
+    width: 28px;
+}
+
+#dados {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
 /* Rodapé */
 
-.rodape{
-    background-color: #4b0082;
+footer {
+    background-color: #4b0082;   
+    padding: 20px 40px;
 }
+
+footer .rodape {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    max-width: 1200px;             
+    margin: 0 auto;
+}
+
+footer .rodape p {
+    color: #fff;
+    font-size: 14px;
+}
+
+footer #social {
+    display: flex;
+    gap: 15px; 
+}
+footer #social img {
+    width: 35px;
+    height: 35px;
+
+}
+
+
 /*  Fim Notebook / PC - HD________________________________ */
 
 /*  Notebook / PC / TV - Full HD ou 4K____________________ */
